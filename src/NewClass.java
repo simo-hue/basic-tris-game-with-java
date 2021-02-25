@@ -10,4 +10,7 @@
  */
 public class NewClass {
 
+    public static void main(String[] args) {
+        tris tris = new tris();
+    }
 }
