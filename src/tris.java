@@ -61,7 +61,28 @@ public class tris implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
        
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for(int i = 0; i < 9; i++) {
+            if(e.getSource()==bottoni[i]){
+                if(p1Girata){
+                    if (bottoni[i].getText() == "") {
+                        bottoni[i].setForeground(Color.GRAY);
+                        bottoni[i].setText("X");
+                        p1Girata = false;
+                        testo.setText("0 gira");
+                        
+                    }
+                }
+                else{
+                    if (bottoni[i].getText() == "") {
+                        bottoni[i].setForeground(Color.yellow);
+                        bottoni[i].setText("0");
+                        p1Girata = false;
+                        testo.setText("X gira");
+                        
+                    }
+                }
+            }
+        }
     }
     
     public void primaMossa() {
