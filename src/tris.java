@@ -154,8 +154,33 @@ public class tris implements ActionListener{
         }
     }
     
-    public void xvittoria(int a, int b, int c) {}
-     public void ovittoria(int a, int b, int c) {}
+    public void xvittoria(int a, int b, int c) {
+    
+        bottoni[a].setBackground(Color.green);
+        bottoni[b].setBackground(Color.green);
+        bottoni[c].setBackground(Color.green);
+        
+        for(int i = 0; i < 9; i++){
+            bottoni[i].setEnabled(false);
+        }
+        testo.setText("X ha vinto, 0 sparati");
+        
+        
+        
+    }
+     public void ovittoria(int a, int b, int c) {
+     
+        bottoni[a].setBackground(Color.green);
+        bottoni[b].setBackground(Color.green);
+        bottoni[c].setBackground(Color.green);
+        
+        for(int i = 0; i < 9; i++){
+            bottoni[i].setEnabled(false);
+        }
+        
+        testo.setText("0 ha vinto, X sparati");
+        
+     }
     
     
 
