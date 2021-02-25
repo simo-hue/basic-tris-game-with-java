@@ -37,8 +37,25 @@ public class tris implements ActionListener{
         
         titolo.setLayout(new BorderLayout());
         titolo.setBounds(0,0,800,100);
+        
+        bottone.setLayout(new GridLayout(3, 3));
+        bottone.setBackground(Color.blue);
+        
+        for(int i = 0; i<9; i++){
+            
+            bottoni[i] = new JButton();
+            bottone.add(bottoni[i]);
+            bottoni[i].setFont(new Font("MV Boli",Font.BOLD,120));
+            bottoni[i].setFocusable(false);
+            bottoni[i].addActionListener(this);
+        }
+        
         titolo.add(testo);
-        frame.add(titolo);
+        frame.add(titolo,BorderLayout.NORTH);
+        frame.add(bottone);
+        
+        
+        
     }
 
     @Override
