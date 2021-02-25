@@ -13,7 +13,7 @@ import java.awt.event.*;
  */
 public class tris implements ActionListener{
     
-    Random ranodm = new Random();
+    Random random = new Random();
     JFrame frame = new JFrame();
     JPanel titolo = new JPanel();
     JPanel bottone = new JPanel();
@@ -54,7 +54,7 @@ public class tris implements ActionListener{
         frame.add(titolo,BorderLayout.NORTH);
         frame.add(bottone);
         
-        
+        primaMossa();
         
     }
 
@@ -64,7 +64,21 @@ public class tris implements ActionListener{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    public void primaMossa() {}
+    public void primaMossa() {
+    
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+        }
+        if(random.nextInt(2) == 0){
+            p1Girata = true;
+            testo.setText("x gira");
+        } 
+        else{
+            p1Girata = false;
+            testo.setText("0 gira");
+        }
+    }
     
     public void controlla() {}
     
