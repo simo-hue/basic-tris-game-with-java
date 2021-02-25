@@ -102,55 +102,71 @@ public class tris implements ActionListener{
     }
     
     public void controlla() {
-    
+        boolean c = true;
         if((bottoni[0].getText() == "X") && (bottoni[1].getText() == "X") && (bottoni[2].getText() == "X")){
             xvittoria(0, 1, 2);
+            c = false;
         }
         if((bottoni[3].getText() == "X") && (bottoni[4].getText() == "X") && (bottoni[5].getText() == "X")){
             xvittoria(3, 4, 5);
+            c = true;
         }
         if((bottoni[6].getText() == "X") && (bottoni[7].getText() == "X") && (bottoni[8].getText() == "X")){
             xvittoria(6, 7, 8);
+            c = true;
         }
         if((bottoni[0].getText() == "X") && (bottoni[3].getText() == "X") && (bottoni[6].getText() == "X")){
             xvittoria(0, 3, 6);
+            c = true;
         }
         if((bottoni[1].getText() == "X") && (bottoni[4].getText() == "X") && (bottoni[7].getText() == "X")){
             xvittoria(1, 4, 7);
+            c = true;
         }
         if((bottoni[2].getText() == "X") && (bottoni[5].getText() == "X") && (bottoni[8].getText() == "X")){
             xvittoria(2, 5, 8);
+            c = true;
         }
         if((bottoni[0].getText() == "X") && (bottoni[4].getText() == "X") && (bottoni[8].getText() == "X")){
             xvittoria(0, 4, 8);
+            c = true;
         }
         if((bottoni[2].getText() == "X") && (bottoni[4].getText() == "X") && (bottoni[6].getText() == "X")){
             xvittoria(2, 4, 6);
+            c = true;
         }
-        //sd
+        //controlla altro giocatore;
         if((bottoni[0].getText() == "0") && (bottoni[1].getText() == "0") && (bottoni[2].getText() == "0")){
             ovittoria(0, 1, 2);
+            c = true;
         }
         if((bottoni[3].getText() == "0") && (bottoni[4].getText() == "0") && (bottoni[5].getText() == "0")){
             ovittoria(3, 4, 5);
+            c = true;
         }
         if((bottoni[6].getText() == "0") && (bottoni[7].getText() == "0") && (bottoni[8].getText() == "0")){
             ovittoria(6, 7, 8);
+            c = true;
         }
         if((bottoni[0].getText() == "0") && (bottoni[3].getText() == "0") && (bottoni[6].getText() == "0")){
             ovittoria(0, 3, 6);
+            c = true;
         }
         if((bottoni[1].getText() == "0") && (bottoni[4].getText() == "0") && (bottoni[7].getText() == "0")){
             ovittoria(1, 4, 7);
+            c = true;
         }
         if((bottoni[2].getText() == "0") && (bottoni[5].getText() == "0") && (bottoni[8].getText() == "0")){
             ovittoria(2, 5, 8);
+            c = true;
         }
         if((bottoni[0].getText() == "0") && (bottoni[4].getText() == "0") && (bottoni[8].getText() == "0")){
             ovittoria(0, 4, 8);
+            c = true;
         }
         if((bottoni[2].getText() == "0") && (bottoni[4].getText() == "0") && (bottoni[6].getText() == "0")){
             ovittoria(2, 4, 6);
+            c = true;
         }
     }
     
